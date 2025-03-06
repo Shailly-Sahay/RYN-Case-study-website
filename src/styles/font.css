@@ -1,0 +1,15 @@
+body {
+  font-family: poppins, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: syne;
+}
+
+h1 {
+  @apply font-semibold text-7xl;
+}
