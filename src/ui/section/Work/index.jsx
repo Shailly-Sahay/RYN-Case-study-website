@@ -7,7 +7,7 @@ import Tag from "../../components/Tag";
 
 const Work = () => {
   return (
-    <section className="section-pd ">
+    <section id="projects" className="section-pd ">
       <div className="flex justify-between items-center">
         <SectionHeader text="Work" />
         <div className=" !mb-12">

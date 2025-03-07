@@ -19,7 +19,7 @@ const Navigation = () => {
       <div className="hidden md:flex gap-8 items-center">
         <PageLink text="Home" href="/" />
         <PageLink text="About" href="/about" />
-        <PageLink text="Projects" href="/projects" />
+        <PageLink text="Projects" href="#projects" />
         <PageLink text="Contact" href="/contact" />
       </div>
 

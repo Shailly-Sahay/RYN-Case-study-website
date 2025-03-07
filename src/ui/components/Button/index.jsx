@@ -54,7 +54,7 @@ const StyledButton = styled.button`
   }
 `;
 
-// 🎨 Styled Link Component (For Navigational Buttons)
+// Styled Link Component (For Navigational Buttons)
 const StyledLink = styled(Link)`
   ${BaseStyles}
   background: ${({ $variant }) =>
