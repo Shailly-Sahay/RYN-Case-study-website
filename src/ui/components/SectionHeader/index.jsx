@@ -6,7 +6,7 @@ const SectionHeader = ({ text }) => {
     <div className="!mb-6">
       <h3 className="flex items-center gap-4">
         <span>
-          <img src="/assets/svg/star.svg" />
+          <img src="/assets/svg/star.svg" className="w-[3.2rem]" />
         </span>
         <span className="text-white">{text}</span>
       </h3>
