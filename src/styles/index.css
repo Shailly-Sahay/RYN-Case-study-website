@@ -64,7 +64,7 @@ h5 {
 }
 
 .outlined-text {
-  color: transparent;
+  @apply font-[Syne] text-transparent text-[8rem] md:text-[10rem];
   /* font-family: syne, sans-serif; */
   -webkit-text-stroke: 2px white; /* Creates the outlined effect */
 }
