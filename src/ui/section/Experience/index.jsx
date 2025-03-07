@@ -9,11 +9,11 @@ const Experience = () => {
         <SectionHeader text="Experience" />
         <div>
           {experiences.map((experience) => (
-            <div className="flex justify-between border-b-1">
+            <div className="flex justify-between border-b-1 !p-8 gap-6">
               <h4>{experience.title}</h4>
-              <div className="">
-                <h5>{experience.company}</h5>
-                <p>{experience.duration}</p>
+              <div className="flex flex-col justify-center">
+                <h5 className="text-end">{experience.company}</h5>
+                <p className="small-font text-end">{experience.duration}</p>
               </div>
             </div>
           ))}

@@ -16,11 +16,11 @@ const Work = () => {
         </Link>
       </div>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-12">
         {works.map((work) => (
           <div
             key={work.id}
-            className="overflow-hidden relative !p-12 rounded-3xl flex flex-col xl:flex-row gap-24 bg-[var(--color-gray)]/60 backdrop-blur-lg before:absolute before:h-[16rem] before:w-[20rem] before:rounded-full before:bg-[var(--color-accent)] before:left-1/2 before:top-full before:translate-y-[-100%]  before:blur-[300px]"
+            className="overflow-hidden relative !p-12  rounded-3xl flex flex-col xl:flex-row gap-24 bg-[var(--color-gray)]/60 backdrop-blur-lg before:absolute before:h-[16rem] before:w-[20rem] before:rounded-full before:bg-[var(--color-accent)] before:left-1/2 before:top-full before:translate-y-[-100%]  before:blur-[300px]"
           >
             {/* Image Section */}
             <div className="w-[100%] xl:w-[60%]">

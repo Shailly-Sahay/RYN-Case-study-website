@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const SectionHeader = ({ text }) => {
   return (
-    <div className="!mb-6">
+    <div className="!mb-12">
       <h3 className="flex items-center gap-4">
         <span>
           <img src="/assets/svg/star.svg" className="w-[3.2rem]" />

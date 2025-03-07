@@ -38,8 +38,12 @@ h3 {
   @apply font-bold text-[3rem] sm:text-[4rem];
 }
 
+h4 {
+  @apply font-medium text-[2.8rem]  sm:text-[3.2rem];
+}
+
 h5 {
-  @apply text-[2.4rem] font-semibold;
+  @apply text-[2rem] sm:text-[2.4rem] font-semibold;
 }
 
 /* font sizes */
