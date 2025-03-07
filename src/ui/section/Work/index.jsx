@@ -10,9 +10,12 @@ const Work = () => {
     <section className="section-pd ">
       <div className="flex justify-between items-center">
         <SectionHeader text="Work" />
-        <Link to="#" className="body-font underline">
-          view all
-        </Link>
+        <div className=" !mb-12">
+          {" "}
+          <Link to="#" className="body-font underline">
+            view all
+          </Link>
+        </div>
       </div>
 
       <div className="flex flex-col gap-12">
