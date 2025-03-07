@@ -7,9 +7,9 @@ const Tag = ({ tags }) => {
       {tags?.map((tag, index) => (
         <div
           key={index}
-          className="border border-white px-3 py-1 rounded-full text-sm"
+          className="border border-white !px-8 !py-3 rounded-full"
         >
-          {tag}
+          <span className="small-font uppercase"> {tag}</span>
         </div>
       ))}
     </div>
