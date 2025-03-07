@@ -9,7 +9,6 @@ const Work = () => {
   return (
     <section className="section-pd ">
       <div className="flex justify-between items-center">
-        {" "}
         <SectionHeader text="Work" />
         <Link to="#" className="body-font underline">
           view all

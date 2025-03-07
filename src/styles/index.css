@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  @apply font-[Syne] text-white overflow-x-hidden;
+  @apply font-[Poppins] text-white overflow-x-hidden;
 }
 
 h1,
@@ -27,7 +27,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: syne;
+  @apply font-[Syne];
 }
 
 h1 {
@@ -48,15 +48,15 @@ h5 {
 
 /* font sizes */
 .body-font {
-  @apply text-[1.6rem] sm:text-[1.8rem];
-}
-
-.small-font {
   @apply text-[1.4rem] sm:text-[1.6rem];
 }
 
+.small-font {
+  @apply text-[1.2rem] sm:text-[1.4rem];
+}
+
 .large-font {
-  @apply text-[2rem];
+  @apply text-[1.8rem];
 }
 
 .section-pd {

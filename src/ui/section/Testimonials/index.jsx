@@ -1,6 +1,7 @@
 import React from "react";
 import { testimonials } from "../../../data/data";
 import SectionHeader from "../../components/SectionHeader";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const Testimonials = () => {
   return (
@@ -8,9 +9,12 @@ const Testimonials = () => {
       <div>
         <SectionHeader text="What they say" />
         {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="flex justify-between">
-            <div className="flex">
-              <div className="w-[24px]">
+          <div
+            key={testimonial.id}
+            className="flex justify-between flex-col sm:flex-row gap-32 !mb-12"
+          >
+            <div className="flex gap-12">
+              <div className="w-[64px]">
                 <img
                   src={testimonial.avatar}
                   alt={testimonial.name}
@@ -19,22 +23,27 @@ const Testimonials = () => {
               </div>
               <div>
                 <h5>{testimonial.name}</h5>
-                <p>{testimonial.company}</p>
+                <p className="large-font">{testimonial.company}</p>
               </div>
             </div>
 
-            <div className="w-1/2 relative before:absolute before:bg-[url('/assets/svg/comma.svg')] before:w-[100%] before:h-[64px] before:bg-no-repeat before:-top-[100%] ">
-              <h4>{testimonial.description}</h4>
+            <div className="w-full sm:w-1/2 ">
+              <h4 className="relative before:absolute before:bg-[url('/assets/svg/comma.svg')] before:w-[100%] before:h-[84px] before:bg-no-repeat before:-top-[10%] md:before:-top-[10%] xl:before:-top-[15%] ">
+                {testimonial.description}
+              </h4>
             </div>
           </div>
         ))}
 
-        <div>
-          <span className="bg-[var(--color-gray)] rounded-full text-black">
+        <div className="flex gap-8 justify-center">
+          <span className="bg-[var(--color-gray)] w-[52px] h-[52px] !p-4 rounded-full text-black flex items-center justify-center">
             {" "}
-            &larr;
+            <ArrowLeft />
           </span>
-          <span className="bg-white rounded-full text-black"> &rarr;</span>
+          <span className="bg-white w-[52px] h-[52px] !p-4 rounded-full text-black flex items-center justify-center">
+            {" "}
+            <ArrowRight />
+          </span>
         </div>
       </div>
     </section>
