@@ -8,7 +8,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full relative section-pd flex justify-between items-center">
+    <nav className="w-full fixed bg-[var(--color-dark)] section-pd flex justify-between items-center z-30">
       <div>
         <Link to="/">
           <img src="/assets/svg/logo.svg" alt="Logo" className="w-20" />

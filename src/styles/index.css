@@ -31,20 +31,20 @@ h5 {
 }
 
 h1 {
-  @apply font-extrabold text-[6.4rem];
+  @apply font-extrabold text-[2.4rem] sm:text-[3.2rem] md:text-[3.6rem] lg:text-[4.8rem] xl:text-[5.6rem] 2xl:text-[8.2rem];
 }
 
 /* font sizes */
 .body-font {
-  @apply text-[1.6rem];
+  @apply text-[1.8rem];
 }
 
 .small-font {
-  @apply text-[1.4rem];
+  @apply text-[1.6rem];
 }
 
 .section-pd {
-  @apply px-[3rem] md:px-[6rem] lg:px-[12rem] py-12;
+  @apply px-[3rem] md:px-[6rem] lg:px-[16rem] py-12 mb-32;
 }
 
 .outlined-text {
