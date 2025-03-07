@@ -8,11 +8,11 @@ const FAQ = () => {
       <div>
         <SectionHeader text="Frequently asked questions" />
 
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-12">
           {faq.map((q) => (
-            <div key={q.id} className="!mb-4">
+            <div key={q.id}>
               <h4>{q.question}</h4>
-              <p>{q.answer}</p>
+              <p className="large-font">{q.answer}</p>
             </div>
           ))}
         </div>
