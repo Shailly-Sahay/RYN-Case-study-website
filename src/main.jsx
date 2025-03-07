@@ -1,11 +1,14 @@
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles/index.css";
 import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    {/* <App /> */}
-    <h1 className="text-pink-500 ">HWYYYYYY</h1>
-  </StrictMode>
+  <BrowserRouter>
+    <StrictMode>
+      <App />
+    </StrictMode>{" "}
+  </BrowserRouter>
 );

@@ -1,9 +1,54 @@
 /* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700&display=swap");
-
-/* Import Tailwind */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800;900&display=swap"); */
 @import "tailwindcss";
 
-/* Import Other Styles */
-@import "./app.css";
-@import "./font.css";
+:root {
+  --color-accent: #ff804a;
+  --color-dark: #010208;
+  --color-gray: #cbcbcb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @apply font-[Syne] text-white overflow-x-hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: syne;
+}
+
+h1 {
+  @apply font-extrabold text-[80px];
+}
+
+/* font sizes */
+.body-font {
+  @apply text-white;
+}
+
+.small-font {
+  @apply text-lg;
+}
+
+.section-pd {
+  @apply px-[100px] py-5;
+}
+
+.outlined-text {
+  color: transparent;
+  /* font-family: syne, sans-serif; */
+  -webkit-text-stroke: 2px white; /* Creates the outlined effect */
+}
