@@ -31,20 +31,20 @@ h5 {
 }
 
 h1 {
-  @apply font-extrabold text-[80px];
+  @apply font-extrabold text-[6.4rem];
 }
 
 /* font sizes */
 .body-font {
-  @apply text-white;
+  @apply text-[1.6rem];
 }
 
 .small-font {
-  @apply text-lg;
+  @apply text-[1.4rem];
 }
 
 .section-pd {
-  @apply px-[100px] py-5;
+  @apply px-[3rem] md:px-[6rem] lg:px-[12rem] py-12;
 }
 
 .outlined-text {

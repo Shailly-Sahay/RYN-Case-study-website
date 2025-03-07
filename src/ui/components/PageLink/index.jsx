@@ -7,12 +7,12 @@ const PageLink = ({ text, href, children }) => {
     <NavLink
       to={href}
       className={({ isActive }) =>
-        `flex items-center justify-center px-12 py-2 rounded-full transition-all ${
-          isActive ? "bg-white text-dark" : "text-white"
+        `flex body-font items-center justify-center !px-8 !py-4 rounded-full transition-all ${
+          isActive ? "bg-white text-[var(--color-dark)]" : "text-white"
         }`
       }
     >
-      {text ? <span className="">{text}</span> : children}
+      {text ? <span>{text}</span> : children}
     </NavLink>
   );
 };
