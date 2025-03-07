@@ -86,7 +86,7 @@ export const blogPosts = [
   },
   {
     id: 2,
-    title: "Case study - Analysis Application.",
+    title: "Case study - Analysis Application",
     date: "Aug 18, 2023",
     image: "/assets/work2.png",
     tags: ["DESIGN", "PRINT"],

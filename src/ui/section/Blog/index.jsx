@@ -15,28 +15,28 @@ const Blog = () => {
         </Link>
       </div>
 
-      <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-0 lg:gap-4">
         {blogPosts.map((blogPost) => (
-          <div key={blogPost.id} className="flex justify-between">
-            <div className="overflow-hidden relative !p-12  rounded-3xl flex flex-col items-center xl:flex-row gap-24 bg-[var(--color-gray)]/60 ">
-              <div className="w-[100%] xl:w-[60%]">
+          <div key={blogPost.id} className="flex justify-between w-full">
+            <div className="overflow-hidden relative !p-12 rounded-3xl flex flex-col lg:flex-row gap-12 items-center w-full">
+              <div className="w-full h-[40%] lg:w-[40%] lg:h-[300px] overflow-hidden rounded-3xl">
                 <img
                   src={blogPost.image}
                   alt={blogPost.title}
-                  className="object-cover w-full h-full rounded-3xl"
+                  className="w-full h-full object-cover rounded-3xl"
                 />
               </div>
 
-              {/* Blog Details */}
-              <div className="flex flex-col justify-center">
-                <p className="large-font !mb-8">{blogPost.date}</p>
-                <h3>{blogPost.title}</h3>
-                <Tag tags={blogPost.tags} />
+              <div className="flex w-full lg:w-[60%] flex-col justify-between">
+                <div className="flex flex-col gap-2 2xl:gap-4 !mb-6">
+                  <p className="large-font !mb-8">{blogPost.date}</p>
+                  <h3 className="!font-semibold">{blogPost.title}</h3>
+                  <Tag tags={blogPost.tags} />
+                </div>
               </div>
-              {/* Read Button */}
-              <span>
+              <div className="flex w-full lg:w-auto !items-start lg:items-center">
                 <Button text="Read" variant="secondary" />
-              </span>
+              </div>
             </div>
           </div>
         ))}
